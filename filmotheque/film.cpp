@@ -15,7 +15,7 @@ QString Film::toString()
         QString res;
         QTextStream buf(&res);
         QString Civ = (m_type == SF)?"Sience Fiction ":"Comedie ";
-        buf<<" "<<m_nom<<" "<<m_date<<" "<<Civ;
+        buf<<" "<<m_nom<<" "<<Civ<<" "<<m_date;
 
         return res;
 

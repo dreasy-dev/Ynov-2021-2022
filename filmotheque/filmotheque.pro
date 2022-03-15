@@ -10,6 +10,7 @@ CONFIG -= app_bundle
 SOURCES += \
         acteur.cpp \
         film.cpp \
+        joue.cpp \
         main.cpp \
         qstd.cpp
 
@@ -22,4 +23,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     acteur.h \
     film.h \
+    joue.h \
     qstd.h
