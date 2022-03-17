@@ -839,7 +839,34 @@ release/mainwindow.o: ../05b_Histogramme/mainwindow.cpp ../05b_Histogramme/mainw
 		B:/qt/6.3.0/mingw_64/include/QtGui/QTransform \
 		B:/qt/6.3.0/mingw_64/include/QtCore/qnativeinterface.h \
 		B:/qt/6.3.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/QVariant \
+		B:/qt/6.3.0/mingw_64/include/QtWidgets/QApplication \
+		B:/qt/6.3.0/mingw_64/include/QtWidgets/qapplication.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qcoreapplication.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qeventloop.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qfuture.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qfutureinterface.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qmutex.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qresultstore.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qfuture_impl.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qthreadpool.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qthread.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qrunnable.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qexception.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qpromise.h \
+		B:/qt/6.3.0/mingw_64/include/QtGui/qguiapplication.h \
+		B:/qt/6.3.0/mingw_64/include/QtGui/qinputmethod.h \
+		B:/qt/6.3.0/mingw_64/include/QtCore/qlocale.h \
+		B:/qt/6.3.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		B:/qt/6.3.0/mingw_64/include/QtWidgets/QPushButton \
+		B:/qt/6.3.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		B:/qt/6.3.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		B:/qt/6.3.0/mingw_64/include/QtWidgets/QWidget \
+		../05b_Histogramme/moncanvas.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\05b_Histogramme\mainwindow.cpp
 
 release/moncanvas.o: ../05b_Histogramme/moncanvas.cpp ../05b_Histogramme/moncanvas.h \

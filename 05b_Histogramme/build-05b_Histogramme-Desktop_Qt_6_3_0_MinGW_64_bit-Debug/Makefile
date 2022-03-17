@@ -302,6 +302,7 @@ Makefile: ../05b_Histogramme/05b_Histogramme.pro B:/qt/6.3.0/mingw_64/mkspecs/wi
 		B:/qt/6.3.0/mingw_64/mkspecs/features/qt_config.prf \
 		B:/qt/6.3.0/mingw_64/mkspecs/win32-g++/qmake.conf \
 		B:/qt/6.3.0/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		B:/qt/6.3.0/mingw_64/mkspecs/features/exclusive_builds.prf \
 		B:/qt/6.3.0/mingw_64/mkspecs/features/toolchain.prf \
 		B:/qt/6.3.0/mingw_64/mkspecs/features/default_pre.prf \
@@ -331,7 +332,6 @@ Makefile: ../05b_Histogramme/05b_Histogramme.pro B:/qt/6.3.0/mingw_64/mkspecs/wi
 		B:/qt/6.3.0/mingw_64/lib/Qt6Gui.prl \
 		B:/qt/6.3.0/mingw_64/lib/Qt6Core.prl \
 		B:/qt/6.3.0/mingw_64/lib/Qt6EntryPoint.prl \
-		.qmake.stash \
 		B:/qt/6.3.0/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\05b_Histogramme\05b_Histogramme.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 B:/qt/6.3.0/mingw_64/mkspecs/features/spec_pre.prf:
@@ -566,6 +566,7 @@ B:/qt/6.3.0/mingw_64/mkspecs/features/qt_functions.prf:
 B:/qt/6.3.0/mingw_64/mkspecs/features/qt_config.prf:
 B:/qt/6.3.0/mingw_64/mkspecs/win32-g++/qmake.conf:
 B:/qt/6.3.0/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 B:/qt/6.3.0/mingw_64/mkspecs/features/exclusive_builds.prf:
 B:/qt/6.3.0/mingw_64/mkspecs/features/toolchain.prf:
 B:/qt/6.3.0/mingw_64/mkspecs/features/default_pre.prf:
@@ -595,7 +596,6 @@ B:/qt/6.3.0/mingw_64/lib/Qt6Widgets.prl:
 B:/qt/6.3.0/mingw_64/lib/Qt6Gui.prl:
 B:/qt/6.3.0/mingw_64/lib/Qt6Core.prl:
 B:/qt/6.3.0/mingw_64/lib/Qt6EntryPoint.prl:
-.qmake.stash:
 B:/qt/6.3.0/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\05b_Histogramme\05b_Histogramme.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
