@@ -9,7 +9,7 @@ class Joue
 private:
      Acteur *m_acteur;
      Film *m_film;
-    QString m_casting;
+     QString m_casting;
 
 public:
     Joue(Acteur *a, Film *f, QString casting);

@@ -44,9 +44,13 @@ int main()
           cout<<joue[c]->toString()<<"\n";
 
 
+    QList<Joue *> acts5eme = film[3]->getjoue();
+    for(int i=0; i<acts5eme.size(); i++)
+        cout<<acts5eme.at(i)->toString();
+
+  //  QList<Joue *> filmWillis = acteur[2]->getjoue();
 
 
-   // }
 }
 
 
