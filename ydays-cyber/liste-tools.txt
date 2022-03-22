@@ -1,0 +1,6 @@
+Nmap
+Lynis
+Aircrack-ng
+Hydra
+WPScan
+Yersinia
