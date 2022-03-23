@@ -17,7 +17,7 @@ echo "
   <static>
     <duration>8640000.0</duration>
     <file>
-      <size width=""1920"" height=""1080"">/path/to/fond.jpg</size>
+      <size width=""1920"" height=""1080"">/home/kali/fond.jpg</size>
     </file>
   </static>
 </background>
