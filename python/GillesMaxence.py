@@ -1,79 +1,27 @@
-# Vous pouvez utiliser print pour vous aider à débugger,
-# car sys.stdout est ignoré par les tests.
 
-# Ignorez ces deux lignes, elles servent pour la fin
-# du programme.
 import hashlib
 import unittest
 
-
-def convert_number(number):
-   
-    
-    liste = ""
+def convert_number(number:int) -> str:
+    res = ""
+    str_number = str(number)
     if number % 3 == 0:
-            liste = liste + "Toto"
-            return liste
-    elif number % 5 == 0:
-            liste = liste + "Tata"
-            return liste
-    elif 3 in number: 
-        liste = liste + "Titi" 
-        return liste
-    elif 5 in number: 
-        liste = liste + "Tutu"
-        return liste
-        
-    else:
-           return number
-    
-          
+        res += "Toto" 
+    if number % 5 == 0:
+        res += "Tata"
+    if "3" in str_number:
+        res += "Titi"
+    if "5" in str_number:
+        res += "Tutu"
+    if res == "":
+        return str_number
+    return res
 
-          
-    
-            
-
-          
-
-          
-
-
-
-# Afficher les nombres de 1 à 100 en suivant l'algorithme suivant :
-#
-# Pour chaque nombre de 1 à 100 inclus:
-#  - si le nombre est multiple de 3, afficher Toto à la place
-#  - si le nombre est multiple de 5, afficher Tata à la place
-#  - si le nombre contient un 3 (comme le nombre 23), afficher
-#    Titi à la place
-#  - si le nombre contient un 5 (comme le nombre 45), afficher
-#    Tutu à la place
-#  - si le nombre contient plusieurs 3 ou plusieurs 5, faire
-#    comme s'il n'y avait qu'un seul 3 ou 5
-#  - si le nombre respecte plusieurs règles, il faut appliquer
-#    les règles dans l'ordre de l'énoncé
-#  - si le nombre ne correspond à aucune règle, afficher le
-#    nombre tel quel
-#
-# Exemples de conversions :
-#  - 6 devient Toto
-#  - 10 devient Tata
-#  - 13 devient Titi
-#  - 52 devient Tutu
-#  - 33 devient TotoTiti
-#  - 15 devient TotoTataTutu
-#  - 2 devient 2
-#
-# Pour répondre à cet exercice, commencer par faire une fonction
-# appelée convert_number qui prend comme paramètre un nombre
-# entier et qui renvoie le texte correspondant à ce nombre
-
-
-# Faire ensuite une fonction appelée conversion_results qui ne prend
-# pas de paramètre, et qui renvoie le texte correspondant
-# à la conversion des nombres de 1 à 100 inclus, chaque
-# nombre converti étant séparé par une espace avec le nombre
-# suivant dans la liste.
+def conversion_results() -> str:
+    res = ""
+    for number in range(1, 101):
+        res += " " + convert_number(number)
+    return res[1:]
 
 
 class TestConvertNumber(unittest.TestCase):
@@ -121,5 +69,3 @@ class TestConversionResults(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
-    
-    
