@@ -12,13 +12,3 @@ apt install beef-xss -y
 apt install metasploit-framework -y
 apt install sqlmap -y
 apt install dnsutils -y
-echo "
-<background>
-  <static>
-    <duration>8640000.0</duration>
-    <file>
-      <size width=""1920"" height=""1080"">/home/kali/fond.jpg</size>
-    </file>
-  </static>
-</background>
-" >> /usr/share/images/desktop-base/lockscreen.xml 

@@ -8,20 +8,25 @@ import unittest
 
 
 def convert_number(number):
-  
-      
-    if number % 5 == 0 and number % 3 == 0:
-            string =+ "Titi"
-            return string
-    elif number % 3 == 0:
-            string =+ "Toto"
-            return string
+   
+    
+    liste = ""
+    if number % 3 == 0:
+            liste = liste + "Toto"
+            return liste
     elif number % 5 == 0:
-            string =+ "Tutu"
-            return string 
+            liste = liste + "Tata"
+            return liste
+    elif 3 in number: 
+        liste = liste + "Titi" 
+        return liste
+    elif 5 in number: 
+        liste = liste + "Tutu"
+        return liste
+        
     else:
            return number
-
+    
           
 
           
